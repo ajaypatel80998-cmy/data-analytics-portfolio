@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ajay Bhesdadiya — Data Analyst</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="nameplate">
+      <h1>Ajay Bhesdadiya</h1>
+      <span class="role">Data Analyst · Fresher</span>
+    </div>
+
+    <p class="pitch">I turn raw data into decisions people can act on. Working with <em>SQL, Python and the Frappe Framework</em> — and always asking why a number moved before trusting it.</p>
+
+    <ul class="meta">
+      <li><a href="mailto:ajaypatel80998@gmail.com">ajaypatel80998@gmail.com</a></li>
+      <li><a href="https://github.com/ajaypatel80998-cmy">GitHub</a></li>
+      <li>Open to full-time and internship roles</li>
+    </ul>
+
+    <figure class="hero-fig">
+      <svg viewBox="0 0 800 220" role="img" aria-label="Line chart comparing weekly on-time delivery rate before and after a routing change; the rate climbs from 78 percent to 94 percent.">
+        <line class="gridline" x1="54" y1="30" x2="780" y2="30"/>
+        <line class="gridline" x1="54" y1="80" x2="780" y2="80"/>
+        <line class="gridline" x1="54" y1="130" x2="780" y2="130"/>
+        <line class="gridline" x1="54" y1="180" x2="780" y2="180"/>
+        <text class="tick" x="14" y="34">95%</text>
+        <text class="tick" x="14" y="84">88%</text>
+        <text class="tick" x="14" y="134">81%</text>
+        <text class="tick" x="14" y="184">74%</text>
+        <polyline class="spark spark-2" points="54,150 145,146 236,152 327,143 418,147 509,141 600,145 691,139 780,143"/>
+        <polyline class="spark" points="54,152 145,148 236,140 327,120 418,96 509,72 600,52 691,38 780,32"/>
+        <circle class="dot" cx="780" cy="32" r="5"/>
+        <text class="tick" x="54" y="208">Wk 1</text>
+        <text class="tick" x="380" y="208">Wk 12</text>
+        <text class="tick" x="735" y="208">Wk 24</text>
+      </svg>
+      <figcaption>On-time delivery after the routing model went live (solid) against the control region (dashed). 78% → 94% over two quarters.</figcaption>
+    </figure>
+  </div>
+</header>
+
+<main>
+
+<section id="work">
+  <div class="wrap">
+    <h2>Selected work</h2>
+
+    <article class="project">
+      <div>
+        <h3>Why deliveries slipped in the monsoon</h3>
+        <p class="stack">PostgreSQL · Python (pandas, scikit-learn) · Power BI</p>
+        <p class="qline">Ops believed rain was the cause. Was it?</p>
+        <p>Joined four years of shipment records with hourly weather and depot staffing data — about 2.1 million rows. Rainfall explained far less variance than expected once I controlled for depot load. The real driver was that the same two sorting hubs absorbed overflow from every delayed route.</p>
+        <p class="finding">Rerouting overflow to three hubs cut median late-delivery time by 41 minutes.</p>
+      </div>
+      <div class="chart">
+        <svg viewBox="0 0 360 200" role="img" aria-label="Bar chart of delay minutes by cause; hub overflow is the largest contributor at 62 minutes, rainfall only 18.">
+          <rect class="bar" x="20" y="34" width="210" height="26"/>
+          <rect class="bar" x="20" y="76" width="128" height="26"/>
+          <rect class="bar-alt" x="20" y="118" width="61" height="26"/>
+          <rect class="bar" x="20" y="160" width="34" height="26"/>
+          <text class="tick" x="238" y="52">62 min</text>
+          <text class="tick" x="156" y="94">38 min</text>
+          <text class="tick" x="89" y="136">18 min</text>
+          <text class="tick" x="62" y="178">10 min</text>
+          <text class="tick" x="20" y="24">Hub overflow · Staffing gap · Rainfall · Other</text>
+        </svg>
+        <p class="cap">Average contribution to delay, per shipment.</p>
+      </div>
+    </article>
+
+    <article class="project">
+      <div>
+        <h3>The customers who leave quietly</h3>
+        <p class="stack">SQL · Python · Tableau</p>
+        <p class="qline">Which subscribers churn without ever complaining?</p>
+        <p>Built monthly cohorts for 180,000 subscribers and modelled churn with logistic regression. Customers who filed a support ticket were <em>less</em> likely to leave. Silence was the warning sign: a 30-day drop in login frequency predicted cancellation better than any complaint.</p>
+        <p class="finding">A weekly "quiet accounts" list recovered 1,240 subscribers in six months.</p>
+      </div>
+      <div class="chart">
+        <svg viewBox="0 0 360 200" role="img" aria-label="Cohort retention curves showing engaged users retaining near 80 percent at month 6 while quiet users fall to 31 percent.">
+          <line class="gridline" x1="26" y1="30" x2="344" y2="30"/>
+          <line class="gridline" x1="26" y1="90" x2="344" y2="90"/>
+          <line class="gridline" x1="26" y1="150" x2="344" y2="150"/>
+          <polyline class="spark" style="animation:none;stroke-dasharray:none" points="26,30 79,36 132,42 185,46 238,52 291,56 344,60"/>
+          <polyline class="spark spark-2" style="animation:none;stroke-dasharray:6 5" points="26,30 79,52 132,78 185,104 238,126 291,142 344,152"/>
+          <text class="tick" x="26" y="176">M0</text>
+          <text class="tick" x="175" y="176">M3</text>
+          <text class="tick" x="322" y="176">M6</text>
+          <text class="tick" x="250" y="50">Engaged 79%</text>
+          <text class="tick" x="262" y="170">Quiet 31%</text>
+        </svg>
+        <p class="cap">Six-month retention by engagement cohort.</p>
+      </div>
+    </article>
+
+    <article class="project">
+      <div>
+        <h3>What a discount is really worth</h3>
+        <p class="stack">BigQuery · dbt · Excel</p>
+        <p class="qline">Do promo codes create sales or just move them earlier?</p>
+        <p>Compared purchase timing for 60,000 shoppers around four promo windows. Around 44% of promo revenue came from customers who had already added the item to a cart that week — demand pulled forward, not created. Rebuilt the margin dashboard to report incremental revenue rather than gross promo sales.</p>
+        <p class="finding">Two of five recurring campaigns were retired; contribution margin rose 3.2 points.</p>
+      </div>
+      <div class="chart">
+        <svg viewBox="0 0 360 200" role="img" aria-label="Scatter plot of discount depth against incremental revenue, showing flattening returns beyond 20 percent discount.">
+          <line class="gridline" x1="30" y1="170" x2="344" y2="170"/>
+          <line class="gridline" x1="30" y1="20" x2="30" y2="170"/>
+          <circle class="pt" cx="56" cy="152" r="6"/><circle class="pt" cx="82" cy="140" r="6"/>
+          <circle class="pt" cx="108" cy="121" r="6"/><circle class="pt" cx="134" cy="112" r="6"/>
+          <circle class="pt" cx="160" cy="92" r="6"/><circle class="pt" cx="186" cy="84" r="6"/>
+          <circle class="pt" cx="212" cy="76" r="6"/><circle class="pt" cx="238" cy="72" r="6"/>
+          <circle class="pt" cx="264" cy="70" r="6"/><circle class="pt" cx="290" cy="69" r="6"/>
+          <circle class="pt" cx="316" cy="71" r="6"/>
+          <text class="tick" x="30" y="190">5% discount</text>
+          <text class="tick" x="268" y="190">40%</text>
+          <text class="tick" x="40" y="34">Incremental revenue</text>
+        </svg>
+        <p class="cap">Returns flatten sharply past a 20% discount.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2>Tools and methods</h2>
+    <div class="skills">
+      <div>
+        <h4>Querying and modelling</h4>
+        <ul>
+          <li>PostgreSQL, BigQuery, MySQL</li>
+          <li>Window functions, CTEs, query tuning</li>
+          <li>dbt, star-schema modelling</li>
+          <li>Airflow basics</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Analysis</h4>
+        <ul>
+          <li>Python — pandas, NumPy, statsmodels</li>
+          <li>Regression and classification</li>
+          <li>A/B testing, power calculations</li>
+          <li>Cohort and funnel analysis</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Communicating</h4>
+        <ul>
+          <li>Power BI, Tableau, Looker Studio</li>
+          <li>Advanced Excel, Power Query</li>
+          <li>Dashboard and metric design</li>
+          <li>Written analysis for non-analysts</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <h2>About</h2>
+    <p class="lede">I'm a fresher building my skills in SQL, Python and the Frappe Framework, with a focus on turning raw data into clear answers. Comfortable picking up a new dataset or codebase and figuring out how the pieces fit together.</p>
+    <p class="lede">Currently building out real projects to add here — I answer email within a day.</p>
+    <div class="contact-grid">
+      <a class="btn btn-primary" href="mailto:ajaypatel80998@gmail.com">Email me</a>
+      <a class="btn" href="https://github.com/ajaypatel80998-cmy">See the code</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer><div class="wrap">Built and maintained by Ajay Bhesdadiya.</div></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
